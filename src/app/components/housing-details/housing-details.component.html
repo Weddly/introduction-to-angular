@@ -1,0 +1,11 @@
+<article>
+  <button [routerLink]="['']">Back</button>
+  <ng-container *ngIf="location">
+    <img [src]="location.photo">
+    <p>{{location.name}}</p>
+    <p>{{location.availableUnits}}</p>
+    <p>{{location.city}}, {{location.state | uppercase}}</p>
+    <p>{{location.laundry ? "Has laundry" : "No laundry"}}</p>
+    <p>{{location.wifi? "Has wifi" : "No wifi"}}</p>
+  </ng-container>
+</article>
